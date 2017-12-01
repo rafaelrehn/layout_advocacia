@@ -1,0 +1,373 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HollerAdvogadosAssociados</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/x-png" href="img/logo_icon.png">
+</head>
+
+<script>
+  $(document).ready(function(){
+    $("#btn_area").click(function(){
+        $("#div_area").fadeToggle("slow");
+    });
+});
+</script>
+
+<style>
+/* Paleta de cores
+Amarelo Pardo
+HEX: #ffef96
+Roxo vinho
+HEX: #50394c
+Cinza
+HEX: #b2b2b2
+Areia
+HEX: #f4e1d2
+Preto
+HEX: #2d2d30
+Laranja
+HEX: #FF9900
+ */
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+
+      /*margin: 30px 0 30px 0;
+      letter-spacing: 3px; */     
+      font-size: 20px;
+      color: #777;
+  }
+    h3.a, h4.a {
+      /*margin: 30px 0 30px 0;
+      letter-spacing: 3px; */     
+      font-size: 20px;
+      color: #777 ;
+  }
+
+
+*html{
+  margin: 0;
+}
+
+body{
+	font: 400 15px/1.8;
+	background-color: #f0f0f0;
+}
+/* Navbar CSS */
+.navbar{
+  	margin: 0;
+  	letter-spacing: 1px;
+  	color: #b2b2b2;
+	border-radius: 0;
+	background-color: #2d2d30;
+}
+.navbar-inverse .navbar-nav > .active> a{
+	background-color: #2d2d30;
+	color: #b2b2b2;
+}
+.navbar-inverse .navbar-brand{
+
+	color: #FF9900;
+}
+.navbar-inverse .navbar-brand:hover{
+	color: white;
+}
+.navbar-inverse .navbar-nav > li > a:active{
+	background-color: red;
+}
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+    color: #FF9900 !important;
+    background-color: #2d2d30 !important;
+    
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #b2b2b2;
+}
+/* Circle image CSS */
+#circleimg {
+      padding: 80px 0 20px 0;
+}
+.person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.9;
+}
+.person:hover {
+    border-color: #f1f1f1;
+}
+/* Abas advogados CSS */
+.nav-tabs li a {
+    color: #777;
+
+}
+/* GoogleMap CSS */
+#googleMap {
+    width: 100%; /* Span the entire width of the screen */
+    height: 400px; /* Set the height to 400 pixels */
+    -webkit-filter: sepia(70%);
+    filter: sepia(30%); /* Change the color of the map to black and white */
+}
+/* footer CSS */
+#footer{
+	background-color: #2d2d30;
+	color: white !important;
+}
+/* Botao CSS */
+  .btn {
+      background-color: #2d2d30;
+      color: #f1f1f1;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      
+      background-color: #b2b2b2;
+      color: #000;
+  }
+
+</style>
+
+</style>
+</style>
+
+<body>
+
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a style="margin-top: 0; padding: 6px 10px 10px 10px;" class="navbar-brand" href="#"><img src="img/logo.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#noticias">Notícias</a></li>
+        <li><a href="#area">Áreas de atuação</a></li>
+        <li><a href="#atendimento">Atendimento</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Administração</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span> Processos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> 
+
+<div class="container" style="margin-top: 50px;">
+	<img src="img/banner.png" width="100%">
+</div>
+<div class="container" style="margin: ;">
+	<h3><b> Quem somos</b></h3><br>
+	<p>O escritório Holler e Advogados Associados atua no setor jurídico de forma estratégica, oferecendo alternativas inteligentes e celeridade na solução de conflitos, proporcionando mais economia e eficiência aos seus clientes, além de um atendimento personalizado.
+
+O formato prático e moderno de gestão permite ao escritório prestar consultoria e assessoria jurídica com custos e honorários customizados, adequando-se à necessidade e possibilidade de cada cliente.
+
+Os profissionais que atuam na linha de frente do escritório são qualificados para desempenhar os mais diversos serviços jurídicos, em especial aqueles pertinentes ao direito empresarial, contratual, trabalhista e de sucessão estratégica.</p>
+</div>
+
+<div class="container" style="margin-top: 30px; ">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="img/car1.png" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="img/car2.png" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="img/car3.png" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+	
+</div>
+
+
+<div class="container" id="noticias" style="margin-top: 20px;">
+	<div class="row">
+		<div class="col-md-12" style="text-align: center;">
+			<h3 id="noticias">Notícias</h3>			
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12"  style=" margin-bottom: 10px; height: 1px; background-color: #b2b2b2;">
+		</div>
+	</div>
+	<div class="row">
+	<div class="col-md-10"><a href="#"><h3> Aposentado que precisa de cuidador recebe adicional de 25%</h3></a>
+	<p style="text-align: justify;">3/9/2013 - Aposentado em condições normais pode receber acréscimo de um quarto em seus vencimentos se necessitar de assistência permanente de outra pessoa. Foi o que decidiu a 5ª Turma do Tribunal Regional Federal da 4ª Região, ao conceder adicional de 25% no valor do benefício de um aposentado rural de 76 anos que está inválido e necessitando de cuidador permanente...</p></div>
+	<div class="col-md-2"><img width="100%" align="right" src="img/not1.png"></div>	
+	</div>
+	<div class="row">
+	<div class="col-md-2"><img width="100%" align="right" src="img/not1.png"></div>	
+	<div class="col-md-10"><a href="#"><h3> Aposentado que precisa de cuidador recebe adicional de 25%</h3></a>
+	<p style="text-align: justify;">3/9/2013 - Aposentado em condições normais pode receber acréscimo de um quarto em seus vencimentos se necessitar de assistência permanente de outra pessoa. Foi o que decidiu a 5ª Turma do Tribunal Regional Federal da 4ª Região, ao conceder adicional de 25% no valor do benefício de um aposentado rural de 76 anos que está inválido e necessitando de cuidador permanente...</p></div>	
+	</div>
+	<div class="row">
+	<div class="col-md-10"><a href="#"><h3> Aposentado que precisa de cuidador recebe adicional de 25%</h3></a>
+	<p style="text-align: justify;">3/9/2013 - Aposentado em condições normais pode receber acréscimo de um quarto em seus vencimentos se necessitar de assistência permanente de outra pessoa. Foi o que decidiu a 5ª Turma do Tribunal Regional Federal da 4ª Região, ao conceder adicional de 25% no valor do benefício de um aposentado rural de 76 anos que está inválido e necessitando de cuidador permanente...</p></div>
+	<div class="col-md-2"><img width="100%" align="right" src="img/not1.png"></div>
+	</div>
+</div>
+
+
+
+<div class="container text-center" id="circleimg">
+  <h3 id="area">Áreas de Atuação</h3>
+  <p style="font-size: 11px;"><em>"Posso não concordar com nenhuma das palavras que você disser, mas defenderei até a morte o direito de você dizê-las."</em></p>
+  <p>Atuamos em várias areas do direito, agende uma consulta!</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Tributário</strong></p><br>
+      <img src="img/tributario.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Trabalhista</strong></p><br>
+      <img src="img/trabalhista.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Penal</strong></p><br>
+      <img src="img/penal.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+    </div>
+  </div>
+  <button class="btn" id="btn_area">Outras Áreas</button>
+</div>
+
+<div class="container" id="div_area" style="display:none; background-color: grey; color: white;">
+  <p>DIREITO EMPRESARIAL<br>
+RECUPERAÇÃO JUDICIAL E EXTRAJUDICIAL DE EMPRESAS<br>
+DIREITO CONTRATUAL<br>
+RECUPERAÇÃO DE CRÉDITOS<br>
+PROTEÇÃO E SUCESSÃO PATRIMONIAL (HOLDING FAMILIAR)<br>
+AQUISIÇÃO, INCORPORAÇÂO, CISÃO E FUSÃO DE EMPRESAS<br>
+DIREITO DO CONSUMIDOR<br>
+DIREITO TRIBUTRÁRIO<br>
+DIREITO PENAL EMPRESARIAL<br>
+DIREITO IMOBILIÁRIO<br>
+DIREITO TRABALHISTA<br>
+DIREITO AGRARIO<br>
+DIREITO AMBIENTAL<br>
+BANCÁRIO E FINANCEIRO<br>
+DIREITOS AUTORAIS E PROPRIEDADE INTELECTUAL<br>
+SOCIETÁRIO<br>
+SUCESSÕES<br>
+RESPONSABILIDADE CIVIL<br>
+DIREITO ADMINISTRATIVO</p>  
+</div>
+
+<div class="container">
+  <h3 class="text-center">Nossos Advogados</h3>  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Rafael Holler</a></li>
+    <li><a data-toggle="tab" href="#menu1">Fernando Alvarenga</a></li>
+    <li><a data-toggle="tab" href="#menu2">Gabriel Toledo</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h2>Rafael, direito trabalhista</h2>
+      <p>Rafael é formado pela FISMA-S<br>OAB: XX.XXX<br>Advogado atuante a 3 anos seua especialidade é direito trabalhista<br>Telefone:(55)99999-9999<br>Email: rafaelholler@gmail.com</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h2>Fernando, direito tributário</h2>
+      <p>Fernando formado pela UFSM-SM<br>OAB: XX.XXX<br>Advogado com 3 anos de atuação sua especialidade é direto tributário<br>Telefone: (55) 99999-9999<br>Email: fernandoalvarenga@gmail.com</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h2>Gabriel, direito penal</h2>
+      <p>Fernando formado pela UFSM-SM<br>OAB: XX.XXX<br>Advogado com 5 anos de atuação sua especialidade é direto penal<br>Telefone: (55) 99999-9999<br>Email: gabrieltoledo@gmail.com</p>
+    </div>
+  </div>
+ </div>
+ </div>
+
+  <div class="container">
+  <h3 class="text-center" id="atendimento">Contato</h3>
+  <p class="text-center"><em>Envie-nos uma mensagem, responderemos o mais breve!</em></p>
+  <div class="row test">
+    <div class="col-md-4">
+      <p>Canais de atendimento:</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Santa Maria, RS</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Fone: 55 3220 3220</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: rhadvogados@gmail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Fone" type="text" required>
+        </div>
+        <div class="col-sm-12">
+          <input style="margin-bottom: 15px;" class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+
+        </div>
+      </div>
+
+      <textarea class="form-control" id="comments" name="comments" placeholder="Mensagem..." rows="5"></textarea>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button style="margin-top: 15px;" class="btn pull-right" type="submit">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+ <br>
+ <br>
+
+<!-- Add Google Maps -->
+<div id="googleMap"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(-29.696549, -53.787418);
+var mapProp = {center:myCenter, zoom:15, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsbYj9mTioegiZnuqCaAI1qdF5atXMuxU&callback=myMap"></script>
+
+<footer>
+	<div class="container-fluid" id="footer" style="text-align: center;">
+		<h4  style="color: #b2b2b2; margin:10px 0 10px 0; font-size: 11px;">Holler Advogados Associados : desenvolvido por RR : rafaelluizrehn@gmail.com<br></h4>
+	</div>
+</footer>
+
+</body>
+</html> 

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+@import url('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">');
+
+/* Paleta de cores
+Amarelo Pardo
+HEX: #ffef96
+Roxo vinho
+HEX: #50394c
+Cinza
+HEX: #b2b2b2
+Areia
+HEX: #f4e1d2
+ */ 
+
+
+*html{
+  margin: 0;
+}
+
+body{
+        font: 400 15px/1.8 Lato, sans-serif;
+        color: f4e1d2;
+
+
+    background-color: #b2b2b2;
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+}
+
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      border-radius: 0;
+      font-size: 14px !important;
+      letter-spacing: 2px;
+      opacity: 0.9;
+  }
+
+  
